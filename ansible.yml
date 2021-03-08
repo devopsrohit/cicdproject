@@ -1,0 +1,18 @@
+- hosts: all
+  become: true
+  
+  task:
+  - name: delete old depoyment
+    command: kubectl delete -f /opt/deployment.yml
+  
+  - name: create service
+    command: kubectl delete -f /opt/deployment.yml
+	
+  - name: delete old depoyment
+    command: kubectl delete -f /opt/deployment.yml
+	
+  - name: create new deployment
+    command: kubectl delete -f /opt/deployment.yml
+	
+  - name: create new service
+    command: kubectl delete -f /opt/deployment.yml
